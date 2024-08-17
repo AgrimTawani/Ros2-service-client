@@ -43,7 +43,7 @@ def main(args=None):
 
     client = TurtleSpawnClient()
     response = client.send_request(x, y, name)
-    response2 = client.set_velocity(name, vx, vy)
+    client.set_velocity(name, vx, vy)
     
     print(f'Turtle "{response.name}" spawned at ({x}, {y}) with velocity ({vx}, {vy})')
 
